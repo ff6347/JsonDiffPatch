@@ -3,9 +3,9 @@
 *   ---------------
 *   https://github.com/benjamine/JsonDiffPatch
 *   by Benjamin Eidelman - beneidel@gmail.com
+*   minimal edits to make it available to extendscript
 */
-(function(){
-"use strict";
+
 
     var jdp = {};
     if (typeof jsondiffpatch != 'undefined'){
@@ -873,7 +873,7 @@
         define(jdp);
     } else {
         // browser global
-        window.jsondiffpatch = jdp;
+        jsondiffpatch = jdp;
     }
 
-})();
+
